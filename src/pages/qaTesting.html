@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   	<link rel="shortcut icon" href="./src/images/favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link
+
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/src/css/styles.css">
+    <title>Desarrollo web</title>
+</head>
+<body>
+    <header class="HeaderContainer-sec">
+        <div class="container">
+            <div class="logoContainer">
+                <img src="/src/images/LOGOTIPO FE 26-03-2024 - 2.svg" viewBox="0 0 100 100" alt="logo" class="logo">
+            </div>
+            <nav class="navbar">
+                <ul class="navList">
+                    <li class="navItem">
+                        <a href="/index.html" class="navlink-sec">Inicio</a>
+                    </li>
+                    <!-- <li class="navItem">
+                        <a href="" class="navlink">Nosotros</a>
+                    </li> -->
+                    <li class="navItem">
+                        <a href="/src/pages/servicios.html" class="navlink-sec">Servicios</a>
+                    </li>
+                    <li class="navItem">
+                        <span class="NavContac"> <a href="#contacto" class="navlink-sec">Contacto</a></span>
+                    </li>
+                </ul>
+                <div class="hamburguesaContainer">
+                    <img src="/src/images/list_7146967.png" alt="menuHamburguesa" class="hamburguesa">
+                </div>
+            </nav>
+        </div>
+    </header>
+        <main class="desaContainer">
+            <section class="desaTitleDescContainer">
+                <h1 class="desaTitle nunitoTitle">
+                    QA TESTINGS
+                </h1>
+                <p class="desc">
+                    Optimice su ciclo de desarrollo y asegure la excelencia de su producto con nuestro experto servicio de QA testing.
+                </p>
+            </section>
+            <h2 class="desaSubTitle nunitoTitle">
+                Contruimos tu sitio web que:
+            </h2>
+            <section class="beneficiosContainer">
+                <img src="/src/images/20945894.jpg" alt="desarrollo web" class="imgDesa">
+                <div class="beneContainer">
+                    <div class="color1"></div>
+                    <div class="txt1">Eficiencia en el desarrollo</div>
+                </div>
+                <div class="beneContainer">
+                    <div class="color2"></div>
+                    <div class="txt2">Reducción de costos</div>
+                </div>
+                <div class="beneContainer">
+                    <div class="color3"></div>
+                    <div class="txt3">Competitividad en el mercado</div>
+                </div>
+                <div class="beneContainer">
+                    <div class="color4"></div>
+                    <div class="txt4">Satisfacción del cliente</div>
+                </div>
+            </section>
+        </main>
+        <section class="ayuda" id="contacto">
+            <h2 class="formularioFtitle" >Contactanos</h2>
+            <p class="formularioFtxt">
+              ¡Comencemos a trabajar juntos!
+            </p>
+            <br></br>
+            <br></br>
+            <p class="formularioFtxt">
+                Nuestro QA testing puede reducir sus costos y acelerar sus lanzamientos. 
+            </p>
+            <br></br>
+            <br></br>
+            <br></br>
+            <p class="formularioFtxt">
+                ¿Preparado para optimizar su desarrollo?  Complete el formulario y agendemos una reunión.
+            </p>
+       
+              <form action="./messent.php" method="POST">
+                <div class="containerFrom">
+                  <div class="inputs">
+                    <label>Nombre</label>
+                    <input type="text" required>
+                    <label>Apellido</label>
+                    <input type="text" required>
+                    <label>Email</label>
+                    <input type="email" name="correo" required>
+                  </div>
+                  <div class="inputs2">
+                    <label>Empresa</label>
+                    <input type="text" required>
+                    <label>Teléfono</label>
+                    <input type="tel" type="text" required>
+                    <label>País</label>
+                    <input type="text" required>
+                  </div>
+                </div>
+                <br>
+                <div class="inputs3 containerFrom">
+                  <div>
+                    <label>Déjanos tu mensaje</label>
+                  </div>
+                  <textarea class="fromTextArea" name="mensaje" required></textarea>
+                  <!--<div class="g-recaptcha" data-sitekey="TU_SITE_KEY"></div>-->
+                  <div class="formTerminosTxt">Al completar este formulario, aceptas que estás de acuerdo con la <a href="./terminos.html">política de confidencialidad</a> de Fortrain Evolution</div>
+                  <div>
+                    <img src="/src/images/logoazul.svg" width="40%" >
+                    <button type="submit" class="btn">Enviar</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </section>
+          <footer>
+            <div class="footer-1">
+              <ul>
+                <li class="color">Fortrain Evolution</li>
+                <li class="color">tel: +54 914-123-456</li>
+                <li class="color">Email: contact@fortrainevolution.com</li>
+                <li class="color">Dirección: Av Santa Fe 2050 B.A. Argentina</li>
+              </ul>
+            </div>
+            <div class="footer-2 ">
+              <ul>
+                <li ><a href="/index.html" class="color">Inicio</a></li>
+                <li><a href="/src/pages/servicios.html" class="color">Servicio</a></li>
+              </ul>
+            </div>
+            <div class="footer-3 ">
+              <small class="color">Política de privacidad () creado por fortrain design 2023</small>
+            </div>
+          </footer>
+    <script src="/src/js/menuHambur.js"></script>     
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script> 
+</body>
+</html>

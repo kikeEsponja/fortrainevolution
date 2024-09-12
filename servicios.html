@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="fortrainevolution.com">
+    <meta name="description" content="consultoría IT">
+  
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WTS2FZVS');</script>
+    <!-- End Google Tag Manager -->
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./fortrain.css" type="text/css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <title>fortrain</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"><img src="./img/logoazul.svg" width="80%"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: flex-end;">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./servicios.html">Servicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./porqueFortrain.html">¿Por qué Fortrain?</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-disabled="true" href="./contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+   
+    <Section class="serviciosContainer">
+        <div class="ServTxtContainer">
+            <a href="./consultoria.html" class="linkServ">
+                <div class="servTxt1 servicio">
+                    <h2 class="SubtituloServ">
+                      Staffing
+                    </h2>
+                </div>
+            </a>
+            <a href="./softwarefactory.html" class="linkServ">
+                <div class="servTxt2 servicio">
+                    <h2 class="SubtituloServ text-center">
+                        Software Factory
+                    </h2>
+                </div>
+            </a>
+            <a href="./preConstruidas.html" class="linkServ">
+                <div class="servTxt3 servicio">
+                    <h2 class="SubtituloServ text-center">
+                        Soluciones Tech
+                    </h2>
+                </div>
+            </a>
+        </div>
+    </Section>
+    
+    <section class="ayuda">
+      <h2 class="formularioFtitle contactanos" >Contactanos</h2>
+      <p class="formularioFtxt desaparece">
+        ¡Comencemos a trabajar juntos!
+      </p>
+      <div class="contenedor_workers">
+        <img src="./img/imgFormularioF-transformed.png" class="workers">
+      </div>
+      <div>
+        <form action="./messent.php" method="POST">
+          <div class="container">
+            <div class="inputs">
+              <label>Nombre</label>
+              <input type="text" required>
+              <label>Apellido</label>
+              <input type="text" required>
+              <label>Email</label>
+              <input type="email" name="correo" required>
+            </div>
+
+            <div class="inputs2">
+              <label>Empresa</label>
+              <input type="text" required>
+              <label>Teléfono</label>
+              <input type="tel" required>
+              <label>país</label>
+              <input type="text" required>
+            </div>
+          </div>
+          <br>
+
+          <div class="inputs3 container">
+            <div>
+              <label>Tu mensaje / objetivo</label>
+            </div>
+            <textarea name="mensaje" required></textarea>
+            <!--<div class="g-recaptcha" data-sitekey="TU_SITE_KEY"></div>-->
+            <small>Al completar este formulario, aceptas que estás de acuerdo con la <a href="./terminos.html">política de confidencialidad</a> de Fortrain Evolution</small>
+            <div>
+              <img src="./img/logoazul.svg" width="40%">
+              <button type="submit" class="btn btn-outline-light" style="background: linear-gradient(270deg, #9F9BB0 0.7%, #86809E 8.7%, #5F4FA3 26.93%, #594C8F 39.69%, #4A369A 51.99%, #472ABC 68.85%, #1D096D 91.54%, #000 106.66%);">enviar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="bg-black text-light">
+      <div class="footer-1">
+        <ul>
+          <li>Fortrain Evolution</li>
+          <li>tel: +54 914-123-456</li>
+          <li>Email: contact@fortrainevolution.com</li>
+          <li>Dirección: Av Santa Fe 2050 B.A. Argentina</li>
+        </ul>
+      </div>
+      <div class="footer-2">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="./servicios.html">Servicio</a></li>
+          <li><a href="./preconstruidas.html">Soluciones</a></li>
+          <li><a href="./porqueFortrain.html">¿Por qué Fortrain?</a></li>
+        </ul>
+      </div>
+      <div class="footer-3">
+        <small>Política de privacidad () creado por fortrain design 2023</small>
+      </div>
+    </footer>
+      <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTS2FZVS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+                      
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

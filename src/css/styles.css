@@ -1,0 +1,869 @@
+*{
+    color: #03022c;
+    font-family: "montzerrat",sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}  
+aside{
+  font-size:50px;
+  position: fixed;
+  right: 15px;
+  top: 30%;
+  z-index: 100;
+}
+
+.bi-whatsapp{
+  color:#0f0;
+}
+.contenedor-ilustracion {
+    width: 100%;
+    height: 83vh;
+    
+}
+.contenedor-texto-de-ilustracion{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 40%;
+    height: 500px;
+    /*border: 2px solid white;*/
+    margin: 1% 0 0 8%;
+}
+.contenedor-texto-de-ilustracion > h2{
+    font-family: "nunito";
+    font-weight: bold;
+    color: #fff;
+    font-size: 45px;
+    padding: 10% 0 1% 0;
+    margin-top: 20%;
+}
+.contenedor-texto-de-ilustracion > p{
+    font-family: "nunito";
+    font-weight: bold;
+    color: #fff;
+    font-size: 20px;
+}
+.seccion-nueva{
+    display: flex;
+    justify-content: center;
+    background: #fff;
+}
+.seccion-nueva > div{
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:33.3%;
+    border: 2px solid #9646BF;
+    padding: 3%;
+}
+.seccion-nueva > div:hover{
+    background: #f5722c;
+    transition: 700ms;
+}
+.number{
+    color:#fff; 
+    font-size: 40px;
+}
+.seccion-nueva-boton{
+    background: #9646BF;
+    
+}
+/* .ilustracion-seccion-nueva{
+    position: absolute;
+    width: 30%;
+    right: 0;
+    top:200px;
+    display: flex;
+    z-index: -100;
+} */
+                                                             /* estilos header */
+@font-face {
+    font-family: "montzerrat";
+    src: url("/src/tipografias/Montserrat/static/Montserrat-Medium.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "nunito";
+    src: url("/src/tipografias/Nunito_Sans/static/NunitoSans_7pt_Condensed-ExtraBold.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.HeaderContainer{
+    width: 100%;
+    height: 100vh;
+    background: url('../images/FONDO\ -\ WEB\ FE.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -10;
+}
+.imgHeaderNew{
+    width: 45%;
+    height: 75vh;
+    position: absolute;
+    margin-left: 55%;
+    z-index: 1;
+
+}
+
+.nunitoTitle{
+    font-family: "nunito", sans-serif;
+}
+    /* estilos Navbar */   
+.none{
+    display: none;
+}
+/* .container1{
+    display: flex;
+    height: 10rem;
+    flex-direction: row;
+    margin-left: 5%;
+    
+} */
+
+.logo{
+    width: 15rem;
+    margin-top: 0;
+    position: absolute;
+    margin-left: 5%;
+    /*z-index: 1;*/
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.navItem{
+    width: fit-content;
+}
+.navList{
+    width: 60%;
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+    font-size: 1.2rem;
+    margin-top: 6.5%;
+    margin-left: 35%;
+    flex-wrap: wrap;
+}
+.navlink-sec{
+    color:#000;
+    text-decoration: none;
+}
+.navlink-sec:hover{
+    background:  #03022C;
+    border-radius: 10px;
+    width: 2%;
+    color: #fff;
+}
+.navlink{
+    text-decoration: none;
+    color: #ffff;
+    font-weight: bold;
+}
+.navlink:hover{
+    background:  #03022C;
+    border-radius: 10px;
+    color: #fff;
+}
+.hamburguesaContainer{
+    width: 20%;
+  
+}
+.hamburguesa{
+    width: 100%;
+    margin-top: 5%;
+    cursor: pointer;
+    transition: 0.5s ease;
+    display: none;
+}
+.video-background {
+    position:relative ;
+    width: 100%;
+    height: auto; /* Ajusta la altura según necesites, o déjalo automático */
+  	margin-top: 30%;
+    overflow: hidden; /* Para asegurar que el contenido no se desborde */
+  }
+  
+  .video-background video {
+    width: 100%; /* Ajusta el ancho del video al contenedor */
+    height: 100%; /* Ajusta la altura del video al contenedor */
+    object-fit: cover; /* Cubre el área del contenedor sin perder la proporción */
+  }
+  
+  .TituloPrincipal{
+    position: absolute;
+    top: 20%;
+    right: 0; /* Alinea el texto a la derecha del contenedor */
+    bottom: 10%; /* Posiciona el texto desde el fondo del contenedor. Ajusta según necesites */
+    color: #8D13F2; /* Asegura que el texto sea legible sobre el video */
+    margin-right: 10%; 
+    font-size: 7rem;/* Añade un poco de margen derecho */
+    z-index: 10; /* Asegura que el texto esté sobre el video */
+  }
+                                                          /*fin estilos Navbar */
+                                                        /* fin estilos header */
+                                                        /* inicio estilos Main */
+ .mainFortrain{
+    width: 100%;
+    margin-top: 23%;
+    /*margin-top: 6%;*/
+}
+.fortrainDescContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.fortrainImg{
+    width: 50%;
+}
+.fortrainTxtContainer{
+    width: 70%;
+    margin-left: 3%;
+}
+.fortrainTitleDesc{
+    width: 100%;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 25%;
+    
+
+}
+.fortrainTxt{
+    width: 90%;
+    text-align: center;
+    margin-left:2% ;
+    font-size: 1.5rem;
+}
+                                                        /* Fin estilos Main */
+/* estilos valores */
+
+.valoresContainer{
+    width: 100%;
+}
+.valores, .mision, .vision{
+    width: 90%;
+    display: flex;
+    margin-top: 2%;
+}
+.misionImg{
+    width: 30%;
+}
+.visionImg{
+    width: 50%;
+    margin-left: 5%;
+}
+.ValoresImg{
+    width: 30%;
+    margin-left: 10%;
+}
+.misionTxtContainer, .valoresTxtContainer{
+    width: 60%;
+}
+.valoresTxtContainer{
+    margin-top: 8%;
+}
+.visionTxtContainer{
+    width: 100%;
+    margin-top: 7%;
+}
+.valores1{
+    width: 100%;
+    margin-left: 10%;
+}
+.valores2{
+    width: 100%;
+    margin-left: 10%;
+}
+.valoTxt1, .valoTxt2{
+    width: 100%;
+    font-size: 1.5rem;
+}
+.misionTitle,.visionTitle,.valoresTitle{
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    align-items: center;
+    margin-left: 8%;
+}
+.visiontxt{
+    width: 100%;
+    margin-left: 7%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.misiontxt{
+    width: 90%;
+    margin-left: 10%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.valor1, .valor2, .valor3, .valor4{
+    display: flex;
+    flex-direction: row;
+}
+.txtValo{
+    font-size: 1rem;
+}
+/* fin estilos valores */
+/* estilos footer */
+
+/* fin estilos footer */
+/* inicio estilos servicios */
+.videosContainer{
+    width: 100%;
+    margin-top: 10%;
+}
+.videoTest,.videoDesa{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Ajusta el centro del video al centro del contenedor */
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.videoDesaContainer, .videoTestContainer{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 47rem; /* Altura fija para el contenedor */
+    position: relative; /* Contexto de posicionamiento para el video */
+    overflow: hidden;
+    z-index: -100;
+}
+.servLink{
+    text-decoration: none;
+    color: #8D13F2;
+}
+
+.tittleDesa,.tittleTest{
+width: 100%;
+font-size: 7rem;
+font-weight: 900;
+text-align: center;
+color: #8D13F2;
+}
+.shadow-drop-2-center {
+	-webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2024-3-11 19:28:44
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation shadow-drop-2-center
+ * ----------------------------------------
+ */
+ @-webkit-keyframes shadow-drop-2-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translateZ(50px);
+              transform: translateZ(50px);
+      -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+  }
+  @keyframes shadow-drop-2-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translateZ(50px);
+              transform: translateZ(50px);
+      -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+  }
+/* fin estilos servicios */
+/* estilos desarro web */
+.desaContainer{
+    width: 100%;
+}
+.desaTitleDescContainer{
+    width: 100%;
+    margin-top: 2.5%;
+}
+.desaTitle{
+    text-align: center;
+    font-size: 3rem;
+}
+.desc{
+    width: 60%;
+    text-align: center;
+    margin-left: 20%;
+    font-size: 1.5rem;
+}
+.desaSubTitle{
+    margin-left: 20%;
+    margin-top: 2%;
+    font-size: 2rem;
+}
+.imgDesa{
+    width: 40%;
+    position: absolute;
+    margin-left: 50%;
+}
+.color1, .color2, .color3, .color4{
+    width: 3rem;
+    height: 2.5rem;
+    transform: skewX(-20deg); /* Ajusta el ángulo para cambiar la inclinación */
+    margin: 20px;
+}
+.beneContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+}
+.txt1, .txt2, .txt3, .txt4{
+    width: auto;
+    font-size: 1.5rem;
+    margin-top: 1.5%;
+}
+.color1{
+    background-color: #9646bf;
+    margin-left: 10%;
+}.color2{
+    background-color: #38c6de;
+    margin-left: 12%;
+}
+.color3{
+    background-color: #03033c;
+    margin-left: 14%;
+}
+.color4{
+    background-color: #f5722c;
+    margin-left: 16%;
+}
+/* fin estilos desarrollo web */
+.ayuda{
+    margin-top: 8%;
+    color: white;
+    height: auto;
+}
+.contenedor_workers{
+  width: 100%;
+  position: absolute;
+}
+.workers{
+  width: 15rem;
+  top: 5rem;
+  position: relative;
+  display: flex;
+}
+.inputs{
+  display: flex;
+  flex-direction: column;
+  margin:0.5%
+}
+.inputs2{
+  display: flex;
+  flex-direction: column;
+  margin:0.5%
+}
+form{
+    border: solid #26EFE9 3px;
+    border-radius: 10px;
+    width: 35%;
+    height: auto;
+    margin-left: 60%;
+    background: white;
+    color: black;
+    position: relative;
+}
+form > .containerFrom{
+  display:flex;
+  flex-wrap: wrap;
+  width: 95%;
+  justify-content: space-evenly;
+  margin-top: 8%;
+}
+form > .inputs3 > div{
+  margin: 3%;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+.footer-3{
+    display: flex;
+    height: 60px;
+    align-items: flex-end;
+}
+.formularioFtitle{
+  width: 60%;
+  font-size: 4rem;
+  text-align: center;
+  position: absolute;
+  margin-top: 5%;
+
+}
+.formularioFtxt{
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 5%;
+  font-size: 2rem;
+}
+.fromTextArea{
+    resize: none;
+    height: 80px;
+    width: 100%;
+    border-radius: 8px;
+    margin-left: 5%;
+}
+.formTerminosTxt{
+    text-align: center;
+    margin-left: 15%;
+}
+.btn-formulario{
+    width: 8rem;
+    background: #f5722c;
+    color: #ffff;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+   background-color: #03022c;
+   margin-top: 5%;
+}
+.color{
+    color: #fff;
+}
+.footer-3{
+    display: flex;
+    height: 60px;
+    align-items: flex-end;
+    color: #fff;
+}
+/* responsivo */
+
+@media (max-width: 1140px) {
+    .navList{
+        gap: 3rem;
+    }
+    .video-background{
+        margin-top: 40%;
+    }
+    .logo{
+        width: 30%;
+        margin-top: 2%;
+  }
+  .TituloPrincipal{
+    font-size: 5rem;
+    margin-left: 5%;
+  }
+}
+  @media (max-width: 767px) {
+    .footer-1 > ul{
+      font-size: 0.8rem;
+    }
+    .footer-2 > ul{
+      font-size: 0.8rem;
+    }
+    .footer-3{
+    	display:none;
+    }
+    .video-background{
+        margin-top: 80rem;
+    }
+    aside{
+      right: 50px;
+    }
+    .contenedor-ilustracion {
+    	position: relative;
+      	z-index: 50;
+      height: 50vh;
+	}
+    .seccion-nueva{
+        display: flex;
+        flex-direction: column;
+      position: relative;
+      z-index:100;
+    }
+    .seccion-nueva > div{
+        height: 25rem;
+        display: flex;
+        font-size: 1rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width:90%;
+        margin-left: 5%;
+        margin-bottom: 2%;
+        border: 2px solid #9646BF;
+        text-align: center;
+        margin-top: 0;
+        
+    }
+    .logo{
+        width: 30%;
+    }
+
+    .navList{
+        display: none; /* Asegúrate de mostrarlo solo cuando se haga clic en el botón de la hamburguesa */
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        top: 60px; /* Cambia esto para colocar justo debajo del navbar */
+        left: 0; /* Alinear al principio de la página */
+        right: 0; /* Alinear al final de la página */
+        background-color: #fff;
+        padding-top: 1rem;
+        border-radius: 10px;
+        z-index: 100; /* Asegúrate de que esté por encima de otros elementos */
+      transition: transform 2s ease;
+    }
+
+    .HeaderContainer{
+        height: 60vh;
+    }
+    
+    .navItem{
+        font-size: 1.2rem; /* Ajusta el tamaño de fuente según sea necesario */
+        width:80%;
+    	margin-right: 25%;
+    	margin-bottom: 5%;
+    	font-size: .7rem;
+    }
+ 
+    .hamburguesaContainer{
+        display: flex;
+        margin-left: 80%; /* Alinea el botón hamburguesa a la derecha */
+        padding-right: 1rem; /* Espacio a la derecha del botón hamburguesa */
+    }
+    
+    .hamburguesa{
+        display: block; /* Asegúrate de que se muestre */
+        z-index: 30; /* Por encima del menú desplegable */
+    }
+    
+    .navbar {
+        position: relative; /* Para posicionar absolutamente los elementos hijos en relación con este */
+        width: 100%; /* Ocupa todo el ancho */
+        /*z-index: 10; /* Asegúrate de que esté por encima del contenido de la página */
+    }
+    
+    /* Asegúrate de tener una clase para cuando el menú está activo */
+    .activeClic{
+        /*display: flex; Muestra el menú cuando está activo
+      transform: rotateY(45deg);*/
+    }
+    .active{
+      display: flex;
+      background: #666;
+      /*transform: rotateY(45deg);*/
+    }
+    
+.navlink{
+    color: #03022c;
+    
+}
+.navItem:hover{
+    border-radius: 15px;
+    /*border:1px solid #212121;*/
+    background:#8D13F2;
+    text-align: center;
+
+}
+.rotate{
+    transform: rotate(90deg);
+}
+.contenedor-texto-de-ilustracion{
+    width: 90%;
+    /*margin-left: 5%;*/
+  z-index:90;
+  height: 270px;
+}
+.contenedor-texto-de-ilustracion > h2{
+	z-index:80;
+}
+.contenedor-texto-de-ilustracion > p{
+	z-index:80;
+}
+.imgHeaderNew{
+    display: none;
+}
+/* .active{
+    display: flex;
+} */
+/* .hamburguesaContainer{
+    width: 20%;
+   margin-left: 70%;
+   margin-top: 2%;
+   
+} */
+/* .hamburguesa{
+    display: inline-block;
+    z-index: 10;
+} */
+/* 
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+   
+} */
+.fortrainDescContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.fortrainTitleDesc{
+    width: 100%;
+    margin-top: 2%;
+    text-align: center;
+    margin-left: 7%;
+}
+.fortrainTxt{
+    width: 100%;
+    text-align: center;
+    margin-left: 1%;
+    font-size: 1rem;
+    margin-left: 7%;
+}
+.valores, .mision, .vision{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+
+}
+.formularioFtitle{
+    width: 100%;
+    font-size: 2rem;
+    position: relative;
+    margin-bottom: 0;
+    margin-top: 5%;
+  }
+  .formularioFtxt{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-top: 2%;
+    font-size: 1rem;
+    margin-left: 0;
+  }
+  
+/* .formularioFtitle{
+}
+
+form{
+   margin-top: 30%; 
+} */
+  
+    .fortrainImg, .ValoresImg, .misionImg, .visionImg, .imgDesa {
+      width: 90%; /* Las imágenes ocupan más ancho de pantalla */
+    }
+    
+    .ValoresImg{
+      position: relative;
+    }
+  
+    .fortrainTxtContainer, .valoresTxtContainer, .misionTxtContainer, .visionTxtContainer, .desaTitleDescContainer {
+      width: 90%; /* Ajuste de ancho para los contenedores de texto */
+      margin-left: 0; /* Alineación */
+    }
+
+    .navlink, .formTerminosTxt, .formularioFtxt,.misiontxt, .visiontxt, .valores1, .descripcion{
+      font-size: 1rem; /* Tamaño de texto reducido para adaptarse a pantallas pequeñas */
+    }
+  
+    .TituloPrincipal, .fortrainTitleDesc, .misionTitle, .visionTitle, .valoresTitle, .tittleDesa {
+      font-size: 1.5rem; /* Títulos más pequeños */
+    }
+
+    form {
+      width: 80%; /* Formularios más estrechos para ajustarse a la pantalla */
+      margin-left: 10%; /* Centrado */
+    }
+  .videoDesaContainer, .videoTestContainer{
+    height: 30rem;
+ 
+    
+  }
+  .videoTest,.videoDesa{
+    width: 40%;
+  }
+  .tittleTest, .tittleDesa{
+    font-size: 2rem;
+  }
+  .desaTitle{
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+}
+.desc{
+    width: 100%;
+    text-align: center;
+    margin-left: 5%;
+    font-size: 1rem;
+}
+.desaSubTitle{
+    width: 100%;
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 0;
+    font-size: 1.5rem;
+}
+.beneficiosContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.imgDesa{
+    width: 80%;
+    position: relative;
+    margin-left: 10%;
+}
+.color1{
+    margin-left: 5%;
+}.color2{
+    margin-left: 7%;
+}
+.color3{
+    margin-left: 9%;
+}
+.color4{
+    margin-left: 10%;
+}
+  }
+
+.titulo, .descripcion {
+    transition: opacity 0.5s ease-in-out, font-size 0.5s ease-in-out;
+    opacity: 0; /* Inicia los elementos como invisibles hasta que cambiarDiapositiva() los haga aparecer */
+}
